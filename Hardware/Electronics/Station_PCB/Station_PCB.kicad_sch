@@ -1,0 +1,181 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b5793bfe-d141-408b-ad46-0c6a76347f95")
+	(paper "A4")
+	(lib_symbols)
+	(bus
+		(pts
+			(xy 73.66 58.42) (xy 90.17 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b126b5d0-9c8e-49be-aeb9-7c4634441af7")
+	)
+	(sheet
+		(at 90.17 53.34)
+		(size 19.05 18.415)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5934f5f1-26d0-4c64-9c85-98fefdb349b8")
+		(property "Sheetname" "Motor controls"
+			(at 90.17 52.6284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "track_misc.kicad_sch"
+			(at 90.17 72.3396 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM" input
+			(at 90.17 58.42 180)
+			(uuid "f1280bd0-203b-478d-95ad-cad7eb0954ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Station_PCB"
+				(path "/b5793bfe-d141-408b-ad46-0c6a76347f95"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 52.705 53.975)
+		(size 20.955 15.875)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9e4dd9f1-4312-4ee8-8623-4ca87bf008a1")
+		(property "Sheetname" "Esp32"
+			(at 52.705 53.2634 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "esp32.kicad_sch"
+			(at 52.451 72.009 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM" output
+			(at 73.66 58.42 0)
+			(uuid "bbaf35a3-8f77-4c17-803e-2cd226961a03")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Station_PCB"
+				(path "/b5793bfe-d141-408b-ad46-0c6a76347f95"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 51.435)
+		(size 21.59 19.685)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ce22094e-5723-4eed-b429-d94e2b18c571")
+		(property "Sheetname" "Power Supply"
+			(at 124.46 50.7234 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 124.46 71.7046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Station_PCB"
+				(path "/b5793bfe-d141-408b-ad46-0c6a76347f95"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
