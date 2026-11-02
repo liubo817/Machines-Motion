@@ -73,7 +73,7 @@
 				(justify left top)
 			)
 		)
-		(pin "{BTR_LVL}" bidirectional
+		(pin "{BTR_LVL}" output
 			(at 118.11 71.12 0)
 			(uuid "12335efb-6d6f-4ecf-b4c7-1f34d6e3d0e3")
 			(effects
@@ -194,7 +194,7 @@
 				(justify left top)
 			)
 		)
-		(pin "{BTR_LVL}" bidirectional
+		(pin "{BTR_LVL}" input
 			(at 132.08 71.12 180)
 			(uuid "ef2dbace-bdad-478b-a463-0ffa51115842")
 			(effects
