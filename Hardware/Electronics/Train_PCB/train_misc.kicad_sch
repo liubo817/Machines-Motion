@@ -5,7 +5,7 @@
 	(uuid "8657ad9c-fbdc-4ead-815d-cc126e29f63d")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x03"
+		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -16,7 +16,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -25,7 +25,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x03"
+			(property "Value" "Conn_01x02"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -57,7 +57,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -90,9 +90,9 @@
 					)
 				)
 			)
-			(symbol "Conn_01x03_1_1"
+			(symbol "Conn_01x02_1_1"
 				(rectangle
-					(start -1.27 3.81)
+					(start -1.27 1.27)
 					(end 1.27 -3.81)
 					(stroke
 						(width 0.254)
@@ -100,17 +100,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(rectangle
@@ -136,7 +125,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -154,7 +143,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -164,24 +153,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -308,183 +279,6 @@
 				)
 			)
 			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -2009,6 +1803,16 @@
 		)
 		(uuid "6c2c45a7-8555-4e5a-a5b8-cfeb463f7d53")
 	)
+	(text "https://www.mouser.dk/en/ProductDetail/JST-Commercial/XHP-2?qs=QpmGXVUTftGT4osVcj8ZRw%3D%3D"
+		(exclude_from_sim no)
+		(at 64.516 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "95f0091e-3161-455c-a2f5-bed6c72f4b6e")
+	)
 	(text "https://shorturl.at/PVCm1"
 		(exclude_from_sim no)
 		(at 271.018 19.812 0)
@@ -2914,16 +2718,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 123.19) (xy 116.84 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2c2d931-85d5-4783-9741-6453b35b5434")
-	)
-	(wire
-		(pts
 			(xy 109.22 123.19) (xy 111.76 123.19)
 		)
 		(stroke
@@ -3090,7 +2884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01d0ed7d-6a7a-4e9a-8daf-f39c918b7d43")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR047"
 			(at 160.02 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -3150,7 +2944,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR029")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -3167,7 +2961,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "06e825c5-31d1-440e-aff7-3a0e8ca2e7e3")
-		(property "Reference" "R19"
+		(property "Reference" "R25"
 			(at 233.68 105.664 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3187,7 +2981,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 233.68 109.728 90)
 			(hide yes)
 			(show_name no)
@@ -3229,7 +3023,86 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "R19")
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 121.92 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "18386003-733c-4a39-9367-48146987024b")
+		(property "Reference" "J1"
+			(at 124.714 119.126 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LEGO motor connection"
+			(at 126.492 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EiT Library:S2BXHA1LFSN"
+			(at 121.92 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.dk/en/ProductDetail/JST-Commercial/S2B-XH-A-1LFSN?qs=QpmGXVUTftHhNeC%252BPQWeTw%3D%3D"
+			(at 121.92 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 121.92 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "db419ee6-e5ac-443e-a3ba-06aac1f08539")
+		)
+		(pin "1"
+			(uuid "cd86e482-c60a-4bcc-ba38-3cc1f626f804")
+		)
+		(instances
+			(project "Train_PCB"
+				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -3248,7 +3121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b7fe27d-74df-4dac-842c-5155a2c4ec23")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR052"
 			(at 228.6 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -3308,7 +3181,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR027")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -3347,7 +3220,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 96.52 84.1248 0)
 			(hide yes)
 			(show_name no)
@@ -3406,7 +3279,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2a5cea6b-1fb2-49a4-b5cd-bb83c0dd74b9")
-		(property "Reference" "R18"
+		(property "Reference" "R24"
 			(at 177.546 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3426,7 +3299,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 172.212 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -3468,7 +3341,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "R18")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -3485,7 +3358,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d3f44c5-3a9a-41bc-a150-7dc81c91d09f")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR044"
 			(at 135.89 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -3545,7 +3418,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR039")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -3562,7 +3435,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "371868d7-1ca2-4d3b-b6d9-ae95e1f96372")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR042"
 			(at 132.08 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3622,7 +3495,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR043")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -3641,7 +3514,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3955b982-9022-4a5f-89c0-9db569763da4")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR045"
 			(at 149.86 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -3701,7 +3574,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR028")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -3718,7 +3591,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e17d5de-9f6d-417c-b071-42314cba15ae")
-		(property "Reference" "C27"
+		(property "Reference" "C16"
 			(at 53.594 99.314 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3729,7 +3602,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.01u"
+		(property "Value" "10n"
 			(at 51.816 104.394 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3740,7 +3613,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 59.3852 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -3782,7 +3655,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "C27")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -3799,7 +3672,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "461f869e-90b4-4939-89f4-55b4589ca130")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR049"
 			(at 167.64 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -3859,7 +3732,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR062")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -3877,7 +3750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47e5f067-0e53-40e2-adb1-517d6e7c202e")
-		(property "Reference" "R17"
+		(property "Reference" "R23"
 			(at 115.57 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3899,7 +3772,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 111.252 107.95 90)
 			(hide yes)
 			(show_name no)
@@ -3941,7 +3814,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "R17")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -3958,7 +3831,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "567ee4a0-6806-4f45-806f-c5aead1306be")
-		(property "Reference" "C19"
+		(property "Reference" "C22"
 			(at 155.194 48.514 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3980,7 +3853,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 160.9852 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4022,7 +3895,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "C19")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -4039,7 +3912,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "58fdff7d-3540-484a-85e9-398ecb38f373")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR043"
 			(at 135.89 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -4099,7 +3972,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR076")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -4116,7 +3989,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "64420b82-a4dc-498e-b9d8-098329560f8a")
-		(property "Reference" "C16"
+		(property "Reference" "C19"
 			(at 127.254 48.514 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4138,7 +4011,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 133.0452 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4180,7 +4053,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "C16")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -4199,7 +4072,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68f606cf-3af1-4059-8ca3-d49254306ce4")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR035"
 			(at 113.03 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -4259,7 +4132,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR026")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -4276,7 +4149,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "72797ce1-c3cd-40b9-b321-eacd26074e2d")
-		(property "Reference" "C18"
+		(property "Reference" "C21"
 			(at 145.034 48.514 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4287,7 +4160,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 145.034 53.594 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4298,7 +4171,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 150.8252 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4340,7 +4213,88 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "C18")
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 135.89 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "76dd04f8-fdae-461f-8dde-e026cc8a53ef")
+		(property "Reference" "C20"
+			(at 131.064 89.154 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 129.286 94.234 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 136.8552 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 135.89 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9072f831-53a3-4938-813e-0d2ffce4b335")
+		)
+		(pin "1"
+			(uuid "90f4a0bb-ac7b-4e2a-9e7d-8f6892d3d190")
+		)
+		(instances
+			(project "Train_PCB"
+				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -4357,7 +4311,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77b944b2-f2b0-4cc7-ab7a-c62671b900db")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR029"
 			(at 104.14 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -4417,7 +4371,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR060")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -4434,7 +4388,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8cd2e1ee-fdd0-48fd-b9ad-c2f943902fcc")
-		(property "Reference" "R16"
+		(property "Reference" "R22"
 			(at 50.038 115.316 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4456,7 +4410,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 54.102 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -4467,7 +4421,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.dk/en/ProductDetail/Vishay-Dale/RCWE0603R200FKEA?qs=sGAEpiMZZMtlubZbdhIBIETDj0h7%2FXtSTHgBbLYVfWg%3D"
 			(at 55.88 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4498,84 +4452,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 116.84 125.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9867f032-9de3-484c-8603-74f6994c0bb7")
-		(property "Reference" "#PWR064"
-			(at 116.84 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 116.84 129.794 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c3ec8f06-0db3-4d69-affa-097cbbc4826a")
-		)
-		(instances
-			(project "Train_PCB"
-				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR064")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -4592,7 +4469,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9ce26e5c-b6d6-4043-bafa-694167274ec3")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR027"
 			(at 88.9 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -4652,7 +4529,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR040")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -4669,7 +4546,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6f2d7ad-6ed2-44a7-8f82-1f4b921f7b52")
-		(property "Reference" "C15"
+		(property "Reference" "C18"
 			(at 117.094 48.514 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4680,7 +4557,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 117.094 53.594 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4691,7 +4568,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 122.8852 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4733,7 +4610,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "C15")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -4751,7 +4628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8c5780f-8918-4d94-a216-59152cb350c1")
-		(property "Reference" "U7"
+		(property "Reference" "U5"
 			(at 98.6633 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4773,7 +4650,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias"
+		(property "Footprint" "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.66x2.46mm_ThermalVias"
 			(at 101.6 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4862,7 +4739,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "U7")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -4912,7 +4789,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.dk/en/ProductDetail/TDK-InvenSense/ICM-42688-P?qs=OlC7AqGiEDk8QrNAV728zw%3D%3D"
 			(at 203.2 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5140,7 +5017,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b3aa50f0-9bbd-434a-ba54-88232a9a4c62")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR048"
 			(at 160.02 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5200,7 +5077,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR065")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -5218,7 +5095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd5b8a90-e99f-4cba-ae01-90d59f4c0bd0")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR037"
 			(at 121.92 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -5278,7 +5155,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR046")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -5295,7 +5172,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2e3659d-8e22-4e86-9718-146e9034115f")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR053"
 			(at 228.6 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5355,92 +5232,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 121.92 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d1fc20c3-f0b9-45c1-84a7-3fa9f1b908db")
-		(property "Reference" "J4"
-			(at 124.46 119.3799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x03"
-			(at 124.46 121.9199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 121.92 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cf148087-4dd0-4496-bca6-0caf364fb16a")
-		)
-		(pin "3"
-			(uuid "f0912310-baa8-474f-a00c-1a60778c9d78")
-		)
-		(pin "2"
-			(uuid "65437979-ab81-4312-8ca2-96f902aca409")
-		)
-		(instances
-			(project "Train_PCB"
-				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "J4")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -5457,7 +5249,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d5125f91-8650-48f4-92f2-54212001daf2")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR046"
 			(at 149.86 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5517,7 +5309,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR063")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -5534,7 +5326,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d58f3853-c550-4dcb-9be1-9b54a48b6228")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR028"
 			(at 96.52 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -5594,7 +5386,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR036")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -5611,7 +5403,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d66e1138-4793-476f-a909-203fc2accb36")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR026"
 			(at 55.88 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -5671,7 +5463,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR044")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5689,7 +5481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d70ccf83-33e6-4040-a201-d9b58481536c")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR040"
 			(at 132.08 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -5749,7 +5541,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR047")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -5766,7 +5558,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eb07a8e2-865b-4123-8637-848a0d7269d5")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR039"
 			(at 121.92 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5826,88 +5618,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 135.89 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ed9b0186-4dff-4e5f-9ee5-3c8a8bdb4cf7")
-		(property "Reference" "C8"
-			(at 130.048 89.408 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 129.54 91.694 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 136.8552 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 135.89 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "577a208b-96c5-44fd-a612-4c36af641ff5")
-		)
-		(pin "2"
-			(uuid "94f7329b-4a55-4f24-89d4-153160f1d0aa")
-		)
-		(instances
-			(project "Train_PCB"
-				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "C8")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)

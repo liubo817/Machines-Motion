@@ -2729,7 +2729,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push_Dual"
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2740,17 +2743,18 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
-				(at 0 7.62 0)
+				(at 1.27 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "SW_Push_Dual"
-				(at 0 -6.35 0)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2760,7 +2764,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 7.62 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2771,7 +2775,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 0 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2781,7 +2785,7 @@
 					)
 				)
 			)
-			(property "Description" "Push button switch, generic, symbol, four pins"
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2803,20 +2807,9 @@
 					)
 				)
 			)
-			(symbol "SW_Push_Dual_0_1"
+			(symbol "SW_Push_0_1"
 				(circle
-					(center -2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.032 -2.54)
+					(center -2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -2828,67 +2821,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.81) (xy 0 5.588)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.048) (xy 0 3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.032) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.016) (xy 0 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.508) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.508) (xy 0 -1.016)
+						(xy 0 1.27) (xy 0 3.048)
 					)
 					(stroke
 						(width 0)
@@ -2899,18 +2832,7 @@
 					)
 				)
 				(circle
-					(center 2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
+					(center 2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -2922,19 +2844,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 3.81) (xy -2.54 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -1.27) (xy -2.54 -1.27)
+						(xy 2.54 1.27) (xy -2.54 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2945,7 +2855,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -2963,7 +2873,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -2978,55 +2888,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "SW_Push_Dual_1_1"
-				(rectangle
-					(start -3.175 5.715)
-					(end 3.175 -4.445)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
 					)
 				)
 			)
@@ -3386,22 +3247,10 @@
 		(uuid "3119d3ad-4920-4e3b-aead-40105992536f")
 	)
 	(junction
-		(at 133.35 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b5913fc-08cf-45bc-a03a-fa2f8108f96e")
-	)
-	(junction
 		(at 252.73 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "53423e54-aa3a-4c3a-9c05-c3c6cc07fe31")
-	)
-	(junction
-		(at 106.68 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6abc2686-b89b-40d2-bb15-974de722e3ff")
 	)
 	(junction
 		(at 44.45 99.06)
@@ -4077,16 +3926,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 177.8) (xy 107.95 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5913e9c8-85f9-4190-8dc4-68ac889e70b6")
-	)
-	(wire
-		(pts
 			(xy 128.27 81.28) (xy 128.27 106.68)
 		)
 		(stroke
@@ -4154,6 +3993,16 @@
 			(type default)
 		)
 		(uuid "6273bf6e-4edd-4899-9a67-c75eb75e5692")
+	)
+	(wire
+		(pts
+			(xy 144.78 172.72) (xy 146.05 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "627550a9-4f2f-4624-84d7-69c459aa634b")
 	)
 	(wire
 		(pts
@@ -4697,16 +4546,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 177.8) (xy 146.05 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9563d2d-6f33-4919-975c-fbc46273aaba")
-	)
-	(wire
-		(pts
 			(xy 133.35 172.72) (xy 134.62 172.72)
 		)
 		(stroke
@@ -4737,7 +4576,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 177.8) (xy 133.35 172.72)
+			(xy 133.35 172.72) (xy 133.35 184.15)
 		)
 		(stroke
 			(width 0)
@@ -4774,16 +4613,6 @@
 			(type default)
 		)
 		(uuid "d5de9385-910c-4156-ba84-0971470e9f05")
-	)
-	(wire
-		(pts
-			(xy 133.35 177.8) (xy 134.62 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6100beb-0243-471b-a6a0-87084ca2c486")
 	)
 	(wire
 		(pts
@@ -4847,16 +4676,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 172.72) (xy 106.68 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de302dca-69c5-4a71-82dc-24c98c7b5ef1")
-	)
-	(wire
-		(pts
 			(xy 105.41 109.22) (xy 106.68 109.22)
 		)
 		(stroke
@@ -4907,16 +4726,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 177.8) (xy 118.11 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e76dd7e8-ef3b-4baa-b1e4-dcf1df74c9b7")
-	)
-	(wire
-		(pts
 			(xy 190.5 86.36) (xy 190.5 93.98)
 		)
 		(stroke
@@ -4957,17 +4766,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 177.8) (xy 133.35 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea353399-02f5-4968-9c65-67cc36263efe")
-	)
-	(wire
-		(pts
-			(xy 106.68 177.8) (xy 106.68 182.88)
+			(xy 106.68 172.72) (xy 106.68 182.88)
 		)
 		(stroke
 			(width 0)
@@ -5064,16 +4863,6 @@
 			(type default)
 		)
 		(uuid "fec45916-3762-4960-93d1-07fa79fc8ac5")
-	)
-	(wire
-		(pts
-			(xy 146.05 172.72) (xy 144.78 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffc28b44-8206-475b-81d9-b9b7d2db4c59")
 	)
 	(label "SCK"
 		(at 201.93 116.84 0)
@@ -5361,7 +5150,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "04245925-f402-4a3b-8494-625fed6ecb58")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR019"
 			(at 175.26 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -5420,7 +5209,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR015")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -5440,7 +5229,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "043a4fab-341a-4580-8933-9f01c9df1cc7")
-		(property "Reference" "R5"
+		(property "Reference" "R6"
 			(at 109.22 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5450,7 +5239,7 @@
 				)
 			)
 		)
-		(property "Value" "22.1k"
+		(property "Value" "22k"
 			(at 109.22 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5460,7 +5249,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 109.22 69.088 90)
 			(hide yes)
 			(show_name no)
@@ -5502,7 +5291,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "R5")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -5521,7 +5310,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0965c4c6-4cd6-4819-ba8c-a8b25bb2f111")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR017"
 			(at 153.67 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -5581,7 +5370,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR018")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -5601,7 +5390,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16a77dc3-5d08-453e-b888-4ee29ade6853")
-		(property "Reference" "R1"
+		(property "Reference" "R26"
 			(at 250.19 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5623,7 +5412,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 254.508 82.55 90)
 			(hide yes)
 			(show_name no)
@@ -5665,7 +5454,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "R1")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -5684,7 +5473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e2697ec-9b56-42fd-83bc-1b91ab87c409")
-		(property "Reference" "C3"
+		(property "Reference" "C7"
 			(at 248.92 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5706,7 +5495,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 251.7648 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -5748,7 +5537,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "C3")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -5767,7 +5556,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22a09ac6-f916-4d45-979b-3c77f701eceb")
-		(property "Reference" "Q5"
+		(property "Reference" "Q2"
 			(at 63.6413 186.6901 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5789,7 +5578,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 63.5 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -5800,7 +5589,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.dk/en/ProductDetail/Comchip-Technology/SS8050-G?qs=LLUE9lz1YbcHg%252BWLMAtcrQ%3D%3D"
 			(at 58.42 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -5834,7 +5623,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "Q5")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -5853,7 +5642,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "268dc458-2412-4986-8b72-3995f22ba5d4")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR021"
 			(at 224.79 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -5913,7 +5702,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR011")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5932,7 +5721,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "285b56b7-5f1b-4418-a4ec-9c0973bc5658")
-		(property "Reference" "R7"
+		(property "Reference" "R2"
 			(at 45.72 179.07 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5952,7 +5741,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 45.72 187.198 90)
 			(hide yes)
 			(show_name no)
@@ -5994,7 +5783,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "R7")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6045,7 +5834,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/2171790001?display=pdf"
+		(property "Datasheet" "https://www.mouser.dk/en/ProductDetail/Molex/217179-0001?qs=DRkmTr78QAQqCH4BoIR1xg%3D%3D"
 			(at 86.36 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6126,7 +5915,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ec3a37d-ce6d-4245-8f74-1fe5c7406101")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR020"
 			(at 205.74 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -6186,7 +5975,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR013")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -6204,7 +5993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3365701a-dc0a-4b4d-af9d-adf990398c3b")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR08"
 			(at 63.5 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -6264,7 +6053,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR09")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -6359,7 +6148,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37709479-4e2b-4f04-8ecb-e0d7320f5899")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR018"
 			(at 154.94 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -6418,7 +6207,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR017")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6458,7 +6247,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-143"
+		(property "Footprint" "EiT Library:SP0503BAHTG"
 			(at 120.015 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6527,7 +6316,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3968f188-ce76-46cf-ad2e-811238f88c5f")
-		(property "Reference" "R4"
+		(property "Reference" "R7"
 			(at 138.43 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6549,7 +6338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 142.748 78.74 90)
 			(hide yes)
 			(show_name no)
@@ -6591,7 +6380,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "R4")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -6608,7 +6397,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3b865242-5c92-436b-af40-53457a054d4f")
-		(property "Reference" "C5"
+		(property "Reference" "C4"
 			(at 66.548 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6619,7 +6408,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 66.548 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6630,7 +6419,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 64.4652 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -6672,7 +6461,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "C5")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -6690,7 +6479,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ca29350-346d-4e1b-811e-c9d627cbcb9b")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR07"
 			(at 53.34 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -6749,7 +6538,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR08")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -6767,7 +6556,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "427acf74-6608-4ed6-a075-66eb3a2b7535")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR09"
 			(at 63.5 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -6826,93 +6615,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_Dual")
-		(at 139.7 175.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "444fc59d-c839-43df-9cbb-1dc27ac4c740")
-		(property "Reference" "SW4"
-			(at 139.7 165.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_Dual"
-			(at 139.7 167.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
-			(at 139.7 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.dk/en/ProductDetail/E-Switch/TL3342F160QG?qs=6C6BR4UgC3N80rVVEktZJA%3D%3D"
-			(at 139.7 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, symbol, four pins"
-			(at 139.7 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f658cba0-4d06-4d23-8466-58c510372c30")
-		)
-		(pin "3"
-			(uuid "dbc6a68f-9d41-439e-8a2e-44a0815273de")
-		)
-		(pin "4"
-			(uuid "699cd47d-541f-4fe1-9942-da2a900d2933")
-		)
-		(pin "1"
-			(uuid "38c5f070-ff04-4b81-b580-1bd282dd6638")
-		)
-		(instances
-			(project "Train_PCB"
-				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "SW4")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6929,7 +6632,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "47c1336e-c9b8-47cb-974e-a8ffaaad91dd")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR05"
 			(at 39.37 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -6988,7 +6691,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR024")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -7006,7 +6709,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a121c9e-f713-4ec4-8c76-f1a132c0d579")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR013"
 			(at 106.68 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -7065,7 +6768,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR014")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7083,7 +6786,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fd14033-1b74-4c31-83b4-8b05d2712882")
-		(property "Reference" "Q4"
+		(property "Reference" "Q1"
 			(at 63.5 166.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7105,7 +6808,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 63.5 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -7116,7 +6819,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.dk/en/ProductDetail/Comchip-Technology/SS8050-G?qs=LLUE9lz1YbcHg%252BWLMAtcrQ%3D%3D"
 			(at 58.42 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -7150,7 +6853,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "Q4")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -7167,7 +6870,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5099b75a-4bb0-4ba4-b579-f974191690c8")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR012"
 			(at 106.68 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -7226,7 +6929,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR022")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -7243,7 +6946,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "544dd4ec-c2a1-4e57-90eb-ec446e7b7ff8")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR014"
 			(at 125.73 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -7302,7 +7005,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR020")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -7319,8 +7022,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "57f36a6e-245d-4a38-b9d4-673ce102364a")
-		(property "Reference" "C7"
-			(at 138.43 187.96 90)
+		(property "Reference" "C6"
+			(at 135.636 185.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7330,8 +7033,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
-			(at 137.922 189.738 90)
+		(property "Value" "100n"
+			(at 141.478 185.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7341,7 +7044,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 135.89 185.1152 0)
 			(hide yes)
 			(show_name no)
@@ -7383,7 +7086,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "C7")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -7403,7 +7106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c847010-011b-431a-bdec-3ed4edebeb12")
-		(property "Reference" "R10"
+		(property "Reference" "R3"
 			(at 77.47 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7413,7 +7116,7 @@
 				)
 			)
 		)
-		(property "Value" "47.5k"
+		(property "Value" "47k"
 			(at 77.47 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7423,7 +7126,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 77.47 69.088 90)
 			(hide yes)
 			(show_name no)
@@ -7465,7 +7168,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "R10")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -7482,7 +7185,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f5be3e7-be4e-41b9-96da-238aa7a8f13d")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR011"
 			(at 106.68 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7541,7 +7244,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR021")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7635,8 +7338,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "680a9837-e040-4d5e-bea2-12e006e8653f")
-		(property "Reference" "C6"
-			(at 111.76 186.69 90)
+		(property "Reference" "C5"
+			(at 108.712 184.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7646,8 +7349,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
-			(at 111.252 188.468 90)
+		(property "Value" "100n"
+			(at 114.808 184.404 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7657,7 +7360,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 109.22 183.8452 0)
 			(hide yes)
 			(show_name no)
@@ -7699,7 +7402,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "C6")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -7716,7 +7419,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "683cb676-23f0-4c71-b03c-876d2b721a78")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR024"
 			(at 252.73 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -7775,7 +7478,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR06")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7794,7 +7497,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6cab2419-2b2c-4a81-b1bc-8bb3468deca6")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR023"
 			(at 252.73 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7854,7 +7557,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR05")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -7873,7 +7576,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "776c055e-4119-4d69-afd0-6bcff9872f2d")
-		(property "Reference" "R3"
+		(property "Reference" "R8"
 			(at 179.832 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7895,7 +7598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 177.038 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -7937,7 +7640,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "R3")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -8032,7 +7735,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f5a4aea-cf6f-4a12-aec1-ab8f6c3ecd26")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR06"
 			(at 53.34 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8092,7 +7795,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR07")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -8109,7 +7812,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "913513b2-2bff-4830-9d62-28fb261eb577")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR022"
 			(at 224.79 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -8168,7 +7871,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR012")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -8186,7 +7889,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9489ad6e-8ee0-4958-a520-f58dcd6d7278")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR015"
 			(at 133.35 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -8245,93 +7948,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_Dual")
-		(at 113.03 175.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96a0e661-ded2-4037-a730-7e7613e3df05")
-		(property "Reference" "SW3"
-			(at 113.03 165.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_Dual"
-			(at 113.03 167.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
-			(at 113.03 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.dk/en/ProductDetail/E-Switch/TL3342F160QG?qs=6C6BR4UgC3N80rVVEktZJA%3D%3D"
-			(at 113.03 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, symbol, four pins"
-			(at 113.03 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9170636a-0e45-41b6-8ac2-673b5ffd90f1")
-		)
-		(pin "3"
-			(uuid "0b6702d3-b019-47ec-ae6d-cb1f0c36f53d")
-		)
-		(pin "4"
-			(uuid "d519215c-5f6d-4aab-bcad-38705dcf43a4")
-		)
-		(pin "1"
-			(uuid "cad4b2ba-85e7-40db-a587-3e7bdda41a2e")
-		)
-		(instances
-			(project "Train_PCB"
-				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "SW3")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -8351,7 +7968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4951589-b78d-4189-8009-4b04ef773d67")
-		(property "Reference" "R2"
+		(property "Reference" "R9"
 			(at 203.2 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8373,7 +7990,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 207.518 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -8415,7 +8032,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "R2")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -8434,7 +8051,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "acfa99d8-0115-4818-8cea-ea7706e6588c")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR016"
 			(at 140.97 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -8494,7 +8111,87 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR019")
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 139.7 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b316c3c4-dc0d-404a-9882-6e1a09ac0edc")
+		(property "Reference" "SW2"
+			(at 139.7 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 139.7 167.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EiT Library:EVPAWCD4A"
+			(at 139.7 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.dk/en/ProductDetail/Panasonic-Industry/EVP-AWCD4A?qs=Ni%252BbJ5lHv10vFM4%2FKy6E%252BQ%3D%3D"
+			(at 139.7 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 139.7 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d3188966-73db-4b18-a3d4-d8418dfa3f0c")
+		)
+		(pin "1"
+			(uuid "d0c96031-b26d-48bd-b88e-3bd2de6787ec")
+		)
+		(instances
+			(project "Train_PCB"
+				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -8513,7 +8210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c358fef4-330f-4ad7-9291-84eb2ed6ec77")
-		(property "Reference" "R6"
+		(property "Reference" "R1"
 			(at 45.72 161.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8533,7 +8230,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 45.72 169.418 90)
 			(hide yes)
 			(show_name no)
@@ -8575,7 +8272,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "R6")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -8593,9 +8290,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c8329337-ec1e-45bd-9c06-d888b2a16e2c")
-		(property "Reference" "U8"
+		(property "Reference" "U2"
 			(at 222.6467 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8607,7 +8303,7 @@
 			)
 		)
 		(property "Value" "ESP32-WROOM-32E-R2"
-			(at 222.6467 81.28 0)
+			(at 261.874 148.082 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8761,7 +8457,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "U8")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -8789,7 +8485,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 37.338 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8800,7 +8496,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 35.2552 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8859,7 +8555,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ccf4bb53-74a0-4d49-8aa1-e42c67120832")
-		(property "Reference" "C4"
+		(property "Reference" "C3"
 			(at 56.388 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8881,7 +8577,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 54.3052 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8923,7 +8619,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "C4")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -8940,7 +8636,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf009dd5-c35b-4194-bef7-57c258744264")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR010"
 			(at 69.85 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -8999,7 +8695,87 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "#PWR023")
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 113.03 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d028b184-ea15-40de-8271-a48dc468659c")
+		(property "Reference" "SW1"
+			(at 113.03 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 113.03 167.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EiT Library:EVPAWCD4A"
+			(at 113.03 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.dk/en/ProductDetail/Panasonic-Industry/EVP-AWCD4A?qs=Ni%252BbJ5lHv10vFM4%2FKy6E%252BQ%3D%3D"
+			(at 113.03 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 113.03 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fc0cd14c-6003-43ea-920d-073d9fb842d7")
+		)
+		(pin "1"
+			(uuid "60d3b110-260d-4532-9e37-e0abb79b55b2")
+		)
+		(instances
+			(project "Train_PCB"
+				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -9018,7 +8794,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0b61361-5896-49b3-b4d6-13294e0f48ce")
-		(property "Reference" "R8"
+		(property "Reference" "R4"
 			(at 101.854 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9038,7 +8814,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 101.6 88.138 90)
 			(hide yes)
 			(show_name no)
@@ -9080,7 +8856,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "R8")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -9119,7 +8895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 25.0952 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -9178,7 +8954,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e94c0370-d518-4eca-bfdf-322ced87f075")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 157.0833 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9200,7 +8976,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm"
+		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.1x3.1mm_ThermalVias"
 			(at 187.96 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -9323,7 +9099,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -9420,7 +9196,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fda65e9e-4e07-4f06-a850-6728da89a213")
-		(property "Reference" "R9"
+		(property "Reference" "R5"
 			(at 101.854 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9440,7 +9216,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 101.6 110.998 90)
 			(hide yes)
 			(show_name no)
@@ -9482,7 +9258,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/aa8c99da-7445-4b81-92ba-ead85a1a3981"
-					(reference "R9")
+					(reference "R5")
 					(unit 1)
 				)
 			)
