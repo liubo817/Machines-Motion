@@ -3040,7 +3040,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "18386003-733c-4a39-9367-48146987024b")
-		(property "Reference" "J1"
+		(property "Reference" "J3"
 			(at 124.714 119.126 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3060,7 +3060,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EiT Library:S2BXHA1LFSN"
+		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A-1_1x02_P2.50mm_Horizontal"
 			(at 121.92 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -3102,7 +3102,7 @@
 		(instances
 			(project "Train_PCB"
 				(path "/bb84cdfa-c088-4449-84c4-8f4a9b08c302/484bfa2e-73c5-4129-98b9-804fcc024210"
-					(reference "J1")
+					(reference "J3")
 					(unit 1)
 				)
 			)
