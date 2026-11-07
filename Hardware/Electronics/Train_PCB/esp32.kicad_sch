@@ -9187,7 +9187,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.1x3.1mm_ThermalVias"
+		(property "Footprint" "EiT Library:QFN-28-1EP_5x5mm_P0.5mm_EP3.1x3.1mm_ThermalVias"
 			(at 187.96 146.05 0)
 			(hide yes)
 			(show_name no)

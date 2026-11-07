@@ -6795,7 +6795,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
+		(property "Footprint" "EiT Library:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
 			(at 163.83 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -11297,7 +11297,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
+		(property "Footprint" "EiT Library:PowerPAK_SO-8_Single"
 			(at 84.455 35.56 0)
 			(hide yes)
 			(show_name no)
