@@ -550,8 +550,8 @@
       "version": 5
     },
     "net_colors": {
-      "+3.3V": "rgb(245, 255, 246)",
-      "VBat": "rgb(230, 255, 0)"
+      "GND": "rgb(251, 255, 253)",
+      "GND1": "rgb(233, 255, 0)"
     },
     "netclass_assignments": {},
     "netclass_patterns": []
